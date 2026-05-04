@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage[12pt]{extsizes}
+\usepackage{fancyvrb}
+\usepackage{indentfirst}
+\usepackage[
+  left=2cm, right=2cm, top=2cm, bottom=2cm, headsep=0.2cm, footskip=0.6cm, bindingoffset=0cm
+]{geometry}
+\usepackage[english,russian]{babel}
+
+
+\begin{document}
+\section*{Вариант 21}
+
+Зная зависимости изменения плотности газа при нагнетании, мы можем рассчитать производительность компрессора как расход газа через третью ступень компрессора:
+
+\begin{equation}
+  G(t) = \lambda_3 V_{\Pi3} n \rho_3 (t)
+\end{equation}
+\noindent где $\rho_3 (t)$ — известная зависимость плотности газа от времени на 3-й ступени компрессора.
+
+Теперь мы можем рассчитать потребление электроэнергии компрессором:
+
+\begin{align}
+  N(t) &= G(t) R \frac{k}{k - 1} \sum^{2}_{j = 1} (\vartheta_{Hj}(t) - \vartheta_0) + \Delta N, \\
+  \Delta N &=
+  \frac{G(t) * R * T_1 * \delta P_1}
+       {\frac{V_{\Pi1}}{V_{\Pi2}} P_{ATM}} +
+  \frac{G(t) R T_2 \delta P_2}
+       {(\frac{V_{\Pi1}}{V_{\Pi2}} P_{ATM} - \delta P_1) \frac{V_{\Pi2}}{V_{\Pi3}}}
+\end{align}
+
+\noindent где $G(t)$ "--- искомая производительность компрессора; $\Delta N$ "--- потери мощности в промежуточных газоохладителях; $R$ "--- газовая постоянная; $T_1$, $T_2$ "--- среднее арифметическое температур воды и воздуха в воздухоохладителях; $\delta P_1$, $\delta P_2$ "--- потери давления воздуха в воздухоохладителях; $P_{ATM}$ — атмосферное давление.
+
+\end{document}
