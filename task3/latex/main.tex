@@ -1,0 +1,104 @@
+\documentclass[coursework]{template/SCWorks}
+\usepackage{template/preamble}
+
+\usepackage{booktabs}
+
+\setminted[rust]{
+    linenos=true,
+    frame=lines,
+    framesep=2mm,
+    fontsize=\small,
+    breaklines=true,
+    tabsize=4
+}
+
+\setminted[text]{
+    frame=lines,
+    framesep=2mm,
+    fontsize=\small,
+    breaklines=true
+}
+
+\setminted[latex]{
+    frame=lines,
+    framesep=2mm,
+    fontsize=\small,
+    breaklines=true
+}
+
+\setminted[typst]{
+    frame=lines,
+    framesep=2mm,
+    fontsize=\small,
+    breaklines=true
+}
+
+
+
+\begin{document}
+
+\chair{математической кибернетики и компьютерных наук}
+
+\title{Конец эпохи {\LaTeX} и рождение Typst: сравнительный анализ систем вёрстки документов}
+
+\course{2}
+\group{251}
+\napravlenie{09.03.04 "--- Программная инженерия}
+
+\author{Иванова Ивана Ивановича}
+
+\chtitle{доцент, к.\,ф.-м.\,н.}
+\chname{С.\,В.\,Миронов}
+
+\satitle{доцент, к.\,ф.-м.\,н.}
+\saname{Г.\,Г.\,Наркайтис}
+
+\patitle{доцент, к.\,ф.-м.\,н.}
+\paname{С.\,В.\,Миронов}
+
+\nirtitle{доцент, к.\,п.\,н.}
+\nirname{В.\,А.\,Векслер}
+
+\term{2}
+\practtype{учебная}
+\duration{2}
+\practStart{01.09.2024}
+\practFinish{01.12.2024}
+
+\date{2024}
+
+\maketitle
+
+\secNumbering
+
+\tableofcontents
+
+\intro
+\input{sections/intro}
+
+\section{Обзор систем вёрстки документов}
+\input{sections/overview}
+
+\section{Сравнительный анализ}
+\input{sections/comparison}
+
+\section{Примеры программного кода}
+\input{sections/examples}
+
+\conclusion
+\input{sections/conclusion}
+
+\bibliographystyle{ugost2003}
+\bibliography{thesis}
+
+\appendix
+
+\section{Листинг Rust-программы для измерения времени компиляции}
+\label{app:rust_benchmark}
+\inputminted{rust}{code/compile_benchmark.rs}
+
+\section{Листинг программы на Rust для анализа документа}
+\label{app:rust_analyzer}
+\inputminted{rust}{code/doc_analyzer.rs}
+
+\end{document}

@@ -1,0 +1,6 @@
+[submodule "task3/typst/typst-template"]
+	path = task3/typst/template
+	url = https://github.com/danilasar/typst-template
+[submodule "task3/latex/template"]
+	path = task3/latex/template
+	url = https://github.com/csit-sgu/latex-template

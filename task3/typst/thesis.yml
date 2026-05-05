@@ -1,0 +1,79 @@
+typst-docs:
+  type: web
+  title: Typst Documentation
+  url:
+    value: https://typst.app/docs
+    date: 2026-05-01
+  note: Загл. с экр. Яз. англ.
+  language: russian
+
+typst-github:
+  type: web
+  title: 'typst/typst: A new markup-based typesetting system'
+  author:
+    - Mädje Laurenz
+    - Haug Martin
+  url:
+    value: https://github.com/typst/typst
+    date: 2026-05-01
+  note: Загл. с экр. Яз. англ.
+  language: russian
+
+latex-project:
+  type: web
+  title: The {LaTeX} Project
+  url:
+    value: https://www.latex-project.org/
+    date: 2026-05-01
+  note: Загл. с экр. Яз. англ.
+  language: russian
+
+mittelbach2004latex:
+  type: book
+  title: The {LaTeX} Companion
+  author:
+    - Mittelbach Frank
+    - Goossens Michel
+    - Braams Johannes
+    - Carlisle David
+    - Rowley Chris
+  date: 2004
+  publisher:
+    name: Addison-Wesley Professional
+    location: Boston
+  page-total: 1090
+
+minted-ctan:
+  type: web
+  title: minted — Highlighted source code for {LaTeX}
+  url:
+    value: https://ctan.org/pkg/minted
+    date: 2026-05-01
+  note: Загл. с экр. Яз. англ.
+  language: russian
+
+pygments:
+  type: web
+  title: Pygments — Python Syntax Highlighter
+  url:
+    value: https://pygments.org/
+    date: 2026-05-01
+  note: Загл. с экр. Яз. англ.
+
+knuth1984texbook:
+  type: book
+  title: The {TeX}book
+  author: Knuth, Donald E.
+  date: 1984
+  publisher:
+    name: Addison-Wesley
+    location: Reading, Massachusetts
+  page-total: 483
+
+typst-blog-2023:
+  type: web
+  title: Typst Beta Release
+  url:
+    value: https://typst.app/blog/2023/
+    date: 2026-05-01
+  note: Загл. с экр. Яз. англ.

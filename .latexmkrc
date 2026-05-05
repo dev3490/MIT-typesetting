@@ -4,3 +4,4 @@ $aux_dir = getcwd() . '/build';
 $pdf_mode = 1;
 $pvc = 1;
 $do_cd = 1;
+$bibtex = 'bibtex %O %B || true';
